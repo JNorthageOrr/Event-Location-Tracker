@@ -1,9 +1,9 @@
 class StaticController < ApplicationController
 
-helper_method :find_by_user
 
-def find_by_user
-    user_id = user.id
+
+def find_by_user 
+    user_id = params[:id]
     @profile = Profile.find_by :user_id => user_id
 end
 
@@ -21,5 +21,11 @@ def index
 	#@profile = Profile.find_by :user_id => params[:id]
 
 end
+
+private
+    # Use callbacks to share common setup or constraints between actions.
+    def get_userPlease
+      @thisUser = User.find(params[:id])
+    end
 
 end

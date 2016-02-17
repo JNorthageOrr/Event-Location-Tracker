@@ -82,7 +82,7 @@ Other
     <% @user_admin.each do |user| %>
       <tr>
         <td><%= "#{user.first_name} #{user.last_name}" %> </td>
-        <% profile = find_by_user(user) %>
+        <% profile = Profile.find_by(user_id: 14) %>
         <td col width="120"><%= profile.status %></td>
       </tr>
     <% end %>
@@ -114,9 +114,10 @@ Other
   <tbody>
     <% @employer_limit_items.each do |user| %>
     <% thisUsersTags = Usertag.where(user_id: user.id) %>
+    <% thisuser = get_userPlease(user.user_id) %>
     <% #thisProfile = Profile.find(tag.tag_id) %>
       <tr>
-        <td col width="120"><%= "#{user.first_name} #{user.last_name}" %> </td>
+        <td col width="120"><%= "#{thisUser.first_name} #{thisUser.last_name}" %> </td>
         <td col width="220"><% thisUsersTags.each do |tag| %> 
                 <% tag = Tag.find(tag.tag_id) %>
                 <%= tag.skill_tag + "   |  "%>

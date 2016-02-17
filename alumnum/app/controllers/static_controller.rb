@@ -1,8 +1,9 @@
 class StaticController < ApplicationController
 
+helper_method :find_by_user
 
 def find_by_user
-    user_id = params[:id]
+    user_id = user.id
     @profile = Profile.find_by :user_id => user_id
 end
 

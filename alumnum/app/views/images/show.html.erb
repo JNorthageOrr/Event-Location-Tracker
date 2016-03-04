@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Upload number:</strong>
+  <%= @image.id %><br />
+  <%= image_tag @image.avatar.url(:thumb)%>
+</p>
+<p>Lat: <%= @image_properties[:lat] %></p><br />
+<p>Lon: <%= @image_properties[:lon] %></p><br />
+
+<iframe
+    width="600"
+    height="450"
+    frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?key=<%= ENV['GOOGLE_MAPS_API_KEY'] %>
+    &q=<%= "#{@image.latitude},#{@image.longitude}" %>">
+</iframe>
+<br>
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>

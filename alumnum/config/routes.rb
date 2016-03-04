@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :images, only: [:index, :create]
+
+  resources :campaigns
+  resources :images
   resources :follows
   resources :tasks
   resources :usertags
@@ -12,8 +16,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'static#index'
-
+   #root 'static#index'
+   root to: 'images#index'
    get '/follow' => 'followtags#new'
    get '/answers/new' => 'answers#new'
    post '/answers/create' => 'answers#create'

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @campaign.name %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @campaign.city %>
+</p>
+
+<%#= image_tag @image.image.url %>
+<%#= image_tag @image.image.url(:medium) %>
+<%#= image_tag @image.image.url(:thumb) %>
+
+<%= link_to 'Add New Picture', new_image_path %>
+<%= link_to 'Edit', edit_campaign_path(@campaign) %> |
+<%= link_to 'Back', campaigns_path %>

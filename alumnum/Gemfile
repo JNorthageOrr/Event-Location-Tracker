@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'dotenv-rails', groups: [:development, :test]
 gem 'chart-js-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
@@ -28,13 +29,21 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'kaminari'
+#used for image uploads
 gem 'paperclip', '~> 4.3', '>= 4.3.5'
+#also used for multiple files
+gem 'dropzonejs-rails'
+
 gem 'carrierwave'
 gem 'omniauth'
 gem 'omniauth-linkedin'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+#for GPS location extraction from image uploads
+gem 'geokit-rails'
+#use to read exif data from images
+gem 'exifr'
 # Use Unicorn as the app server
  gem 'unicorn'
 

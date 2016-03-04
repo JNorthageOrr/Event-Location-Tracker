@@ -31,6 +31,8 @@ class ProfilesController < ApplicationController
     @usertags = Usertag.where user_id: this_user_id
 
     @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true, filter_html: true)
+    @image = @profile.image_file_name
+    @this_image_properties = image_properties
 
   end
 
@@ -102,4 +104,44 @@ class ProfilesController < ApplicationController
     def profile_params
       params.require(:profile).permit(:headline, :image_url, :bio, :view_count, :status, :twitter, :github, :personal_site, :linkedin, :image, :attachment)
     end
+
+    def image_properties
+      image_url_broken = @profile.image.url(:original)
+      precede_url = "./public"
+      regexp = /\?\d+$/
+      image_url_fixed = image_url_broken.sub!(regexp, '')
+      image_url_final = precede_url + image_url_fixed
+      #binding.pry
+      #debugger
+      
+      lat_my = EXIFR::JPEG.new(image_url_final).gps.latitude
+      lon_my = EXIFR::JPEG.new(image_url_final).gps.longitude
+      this_profile_properties = {
+        "lat": lat_my,
+        "lon": lon_my
+      }
+    end
+
+    def home
+    end
+  
+    def geocoding
+      respond_to do |format|               
+      format.js
+      end
+    end
+  
+    def reverse_geocoding
+      respond_to do |format|               
+        format.js
+      end
+    end
+
+
+#    \?\d+$    -- this finds anything preceeding a ?
+#    var regexp = /\?\d+$/gi    
+#    var url = "/system/profiles/images/000/000/011/original/20160301_095840.jpg?1456866438"
+#    var cut_url = url.match(regexp);
+#   var new_url = url.replace(/\?\d+$/i, '')
+
 end

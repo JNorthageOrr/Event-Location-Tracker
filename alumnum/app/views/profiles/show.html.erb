@@ -1,3 +1,4 @@
+
 <p id="notice"><%= notice %></p>
 <div class="headline">
   <div class="circle-image">
@@ -5,79 +6,29 @@
   </div>
 
     <h1><%= @alum.first_name + " " + @alum.last_name %></h1>
-    <h3><%= @profile.headline %></h3>
-    <p><%= @markdown.render(@profile.bio).gsub("script","nice try").html_safe %></p>
-    <% if @profile.attachment? %>
-    <%= link_to "Download Resume Pdf", @profile.attachment.url %>
-    <% end %>
+<!--
+<div class="image-properties">
+<h1>Image Properties</h1>
+<%#= @profile.image.url %>
+<%#= image_tag @profile.image.url(:thumb) %>
+-->
+<p>Lat: </p><%= @this_image_properties[:lat] %>
+<p>Lon: </p><%= @this_image_properties[:lon] %>
+
+
 </div>
 
-<div class="sidebar col-md-2">
 
-<p>
-  <strong>View count:</strong>
-  <%= @profile.view_count %>
-</p>
 
-  <div class="pdf">
-    <%= link_to "Download resume (.pdf)" %>
-  </div>
-
-  <p>
-   <%= @alum.email %>
-  </p>
-  <p>
-    <strong>Status:</strong>
-    <%= @profile.status %>
-  </p>
-
-  <p>
-    <a href="<%= @profile.twitter %>">Twitter</a>
-  </p>
-
-  <p>
-    <a href="<%= @profile.github %>">Github</a>
-  </p>
-
-  <p>
-    <a href="<%= @profile.personal_site %>">Personal Site</a>
-  </p>
-
-  <p>
-    <a href="<%= @profile.linkedin %>">LinkedIn</a>
-  </p>
-
-  <strong>tags</strong>
-<% @usertags.each do |t| %>
-<div class="tag">
-  <%= t.tag.skill_tag %><br>
+<h1>Google Maps Tut</h1>
+<div id="map-container">
+  <div id="map-canvas"></div>
 </div>
-<% end %>
 
-<div class="question-container">
-  <h1>Q&A</h1>
-    <% @qnas.each do |q| %>
-      <h3>
-        <%= q.question.question %><br>
-      </h3>
-        <%= q.response %><br>
-    <% end %>
-  </div>
-</div>
-<div class="resume-container col-md-10">
-  <h1>Resume Items</h1>
-  <% @resume.each do |r| %>
-    <div class="resume-item <%=r.kind.downcase%>" >
-      <h2><%= r.title %></h2>
-      <p> <%= r.heading %><br>
-      <%= r.start_date %> - <%= r.end_date %><br>
-      <%= @markdown.render(r.description).gsub("script","scr1pt").html_safe %><br>
-      </p>
-    </div>
-  <% end %>
-</div>
+
+
 <% if user_signed_in? and current_user == @alum  %>
-  <%= link_to 'Edit My Profile', edit_profile_path(@profile) %> |
+  <%#= link_to 'Edit My Profile', edit_profile_path(@profile) %> 
 <% end %>
 
-<%= link_to 'Back', profiles_path %>
+<%#= link_to 'Back', profiles_path %>

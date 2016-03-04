@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160216164920) do
+ActiveRecord::Schema.define(version: 20160302234256) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,17 @@ ActiveRecord::Schema.define(version: 20160216164920) do
   add_index "answers", ["profile_id"], name: "index_answers_on_profile_id", using: :btree
   add_index "answers", ["question_id"], name: "index_answers_on_question_id", using: :btree
 
+  create_table "campaigns", force: :cascade do |t|
+    t.string   "name"
+    t.string   "city"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
   create_table "follows", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "tag_id"
@@ -36,6 +47,17 @@ ActiveRecord::Schema.define(version: 20160216164920) do
 
   add_index "follows", ["tag_id"], name: "index_follows_on_tag_id", using: :btree
   add_index "follows", ["user_id"], name: "index_follows_on_user_id", using: :btree
+
+  create_table "images", force: :cascade do |t|
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.float    "latitude"
+    t.float    "longitude"
+  end
 
   create_table "profiles", force: :cascade do |t|
     t.string   "headline"

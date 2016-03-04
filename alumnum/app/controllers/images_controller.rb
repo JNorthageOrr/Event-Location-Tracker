@@ -44,12 +44,12 @@ class ImagesController < ApplicationController
       #binding.pry
       #debugger
       
-      lat_my = EXIFR::JPEG.new(image_url_final).gps.latitude
-      lon_my = EXIFR::JPEG.new(image_url_final).gps.longitude
-      this_profile_properties = {
-        "lat": lat_my,
-        "lon": lon_my
-      }
+      #lat_my = EXIFR::JPEG.new(image_url_final).gps.latitude
+      #lon_my = EXIFR::JPEG.new(image_url_final).gps.longitude
+      #this_profile_properties = {
+      #  "lat": lat_my,
+      #  "lon": lon_my
+      #}
   end
 
 end

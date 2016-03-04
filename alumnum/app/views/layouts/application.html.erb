@@ -45,48 +45,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/profiles">Profiles <span class="sr-only">(current)</span></a></li>
-      
-   <% if current_user %>
-          <li class="active">
-          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %> 
-          </li>
-
-          <% if is_alum?  && current_alum_profile_id %>
-            <li class="active">
-              <a href="/profiles/<%=current_alum_profile_id %>">My Profile </a>
-            </li>
-          <% elsif is_alum? %>
-            <li class="active">
-             <a href="/profiles/new">Create Profile</a>
-            </li>
-          <% else %>
-
-          <% end %>
-    
-          <li class="active"><a href="#">Hello, <strong><%= current_user.first_name + " " + current_user.last_name %></strong><span class="sr-only">(current)</span></a>
-         </li>
+      <!--
         
-        <% else %>
-          <li class="active">
-          <%= link_to('Login', new_user_session_path)  %> 
-          </li>
-
-          <li><%= link_to('Sign Up', new_user_registration_path)  %> </li>
-          <li> <%= link_to('Sign Up with Linkedin', user_omniauth_authorize_path(:linkedin))  %> </li>
-        <% end %>
-
-        <li class="search">
-
-        <%= form_tag("/search", method: "get", class: "search") do %>
-        <%= label_tag(:q, "Search for:") %>
-        <%= text_field_tag(:q) %>
-        <%= submit_tag("Search") %>
-      <% end %>
-
-      </li>
-      </ul>
-
+-->
        
         <!--
         <li class="dropdown">

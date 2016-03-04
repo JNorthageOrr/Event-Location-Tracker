@@ -1,9 +1,9 @@
 
 <% @images.each do |image| %>
   
-  <div class="img-thumbnail">
+  <div class="image-thumbnails">
   	<%# link_to image.avatar.url %>
-  	<%= image_tag image.avatar.url(:thumb)%>
+  	<%= image_tag image.avatar.url(:large)%>
     <a href="/images/<%=image.id%>"><%=image.avatar_file_name%></a>
   </div><br />
 <% end %>

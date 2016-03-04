@@ -42,13 +42,10 @@ gem 'omniauth-linkedin'
 
 #for GPS location extraction from image uploads
 gem 'geokit-rails'
-#use to read exif data from images
-gem 'exifr'
+#use to read exif data from images, added :git source fork to access .gps? helper
+gem 'exifr', :git => 'git://github.com/picuous/exifr.git'
 # Use Unicorn as the app server
  gem 'unicorn'
-
-
- gem 'foreman'
 
  gem 'redcarpet'
 # Use Capistrano for deployment

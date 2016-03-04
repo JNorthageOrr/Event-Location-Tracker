@@ -17,10 +17,16 @@ class Image < ActiveRecord::Base
   #do_not_validate_attachment_file_type :avatar
   def save_latlong
       #exif_data = MiniExiftool.new(image.queued_for_write[:original].path)
-      lat = EXIFR::JPEG.new(avatar.queued_for_write[:original].path).gps.latitude
-      long = EXIFR::JPEG.new(avatar.queued_for_write[:original].path).gps.longitude
-      self.latitude = lat
-      self.longitude = long
+      #binding.pry
+      if (EXIFR::JPEG.new(avatar.queued_for_write[:original].path).gps?)
+        lat = EXIFR::JPEG.new(avatar.queued_for_write[:original].path).gps.latitude
+        long = EXIFR::JPEG.new(avatar.queued_for_write[:original].path).gps.longitude
+        self.latitude = lat
+        self.longitude = long
+      else
+        self.latitude = nil
+        self.longitude = nil
+      end
   end 
 
 

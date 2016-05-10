@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160510172534) do
+ActiveRecord::Schema.define(version: 20160510172853) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -70,17 +70,6 @@ ActiveRecord::Schema.define(version: 20160510172534) do
   end
 
   add_index "profiles", ["user_id"], name: "index_profiles_on_user_id", using: :btree
-
-  create_table "qnas", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "question_id"
-    t.text     "response"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  add_index "qnas", ["question_id"], name: "index_qnas_on_question_id", using: :btree
-  add_index "qnas", ["user_id"], name: "index_qnas_on_user_id", using: :btree
 
   create_table "questions", force: :cascade do |t|
     t.string   "question"
@@ -150,7 +139,5 @@ ActiveRecord::Schema.define(version: 20160510172534) do
   add_foreign_key "answers", "profiles"
   add_foreign_key "answers", "questions"
   add_foreign_key "profiles", "users"
-  add_foreign_key "qnas", "questions"
-  add_foreign_key "qnas", "users"
   add_foreign_key "resume_items", "users"
 end

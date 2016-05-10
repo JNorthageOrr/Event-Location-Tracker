@@ -1,9 +1,19 @@
 
 <% @images.each do |image| %>
   
-  <div class="image-thumbnails">
-  	<%# link_to image.avatar.url %>
-  	<%= image_tag image.avatar.url(:large)%>
-    <a href="/images/<%=image.id%>"><%=image.avatar_file_name%></a>
-  </div><br />
+  <div class="image-index">
+  	<%= link_to image_tag(image.avatar.url(:medium)), image %>
+  	
+<!--    
+	<%#= image_tag image.avatar.url(:medium) %>
+		<div class="image-text">
+    		<%#= link_to "Show", image.avatar.url(:medium) %>
+    		<a href="/images/<%=image.id%>">Show</a><br />
+    		<%#= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %>
+    		<p>Image ID: <%#= image.id%></p>
+    	</div>
+
+-->
+  </div>
+
 <% end %>

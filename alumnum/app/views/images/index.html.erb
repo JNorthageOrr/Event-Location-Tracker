@@ -1,13 +1,16 @@
-<h1>Campaign Images</h1>
+<div class="index_container">
+	<h1>Campaign Images</h1>
 
-<%= form_for(Image.new, html: { multipart: true, class: "dropzone"}) do |f|  %>
-  <div class="fallback">
-  <p><strong>Upload an Image</strong></p>
-    <%= f.file_field :avatar %><br>
-    <%= f.submit "Upload Image" %>
-  </div>
-<% end %>
+	<%= form_for(Image.new, html: { multipart: true}) do |f|  %>
+  	<div class="fallback">
+  		<p><strong>Upload an Image</strong></p>
+    	<%= f.file_field :avatar %><br>
+    	<%= f.submit "Upload Image" %>
+  	</div>
+	<% end %>
+	
+	
+  		<%= render "index" %>
+	
 
-<div class="index">
-  <%= render "index" %>
 </div>

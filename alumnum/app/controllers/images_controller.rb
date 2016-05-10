@@ -1,9 +1,11 @@
 class ImagesController < ApplicationController
-  #before_action :set_image, only: [:show, :edit, :update, :destroy]
+  before_action :set_image, only: [:edit, :update, :destroy] #removed :show
 
   def index
     @images = Image.all
-    @image = Image.new
+    #@image = Image.new
+    
+
   end
   
   #GET /images/1
@@ -16,11 +18,11 @@ class ImagesController < ApplicationController
   # GET /images/new
   def new
     @image = Image.new
+    @image = Image.find(params[:id])
   end
 
   def create
     @image = Image.new(image_params)
-    #binding.pry
     if @image.save
       render json: { message: "success", fileID: @image.id }, status: 200
     else
@@ -28,7 +30,15 @@ class ImagesController < ApplicationController
     end
   end
 
-  
+  def destroy
+    @image = Image.find(params[:id])
+    @image.destroy
+    respond_to do |format|
+      format.html { redirect_to images_url, notice: 'Image was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
   private
   
   def image_params
@@ -41,15 +51,6 @@ class ImagesController < ApplicationController
       regexp = /\?\d+$/
       image_url_fixed = image_url_broken.sub!(regexp, '')
       image_url_final = precede_url + image_url_fixed
-      #binding.pry
-      #debugger
-      
-      #lat_my = EXIFR::JPEG.new(image_url_final).gps.latitude
-      #lon_my = EXIFR::JPEG.new(image_url_final).gps.longitude
-      #this_profile_properties = {
-      #  "lat": lat_my,
-      #  "lon": lon_my
-      #}
   end
 
 end

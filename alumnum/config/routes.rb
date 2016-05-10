@@ -3,13 +3,6 @@ Rails.application.routes.draw do
 
   resources :campaigns
   resources :images
-  resources :follows
-  resources :tasks
-  resources :usertags
-  resources :tags
-  resources :qnas
-  resources :questions
-  resources :resume_items
   resources :profiles
   devise_for :users, controllers: { omniauth_callbacks: "callbacks" }
   # The priority is based upon order of creation: first created -> highest priority.
@@ -18,13 +11,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
    #root 'static#index'
    root to: 'images#index'
-   get '/follow' => 'followtags#new'
-   get '/answers/new' => 'answers#new'
-   post '/answers/create' => 'answers#create'
-
    get '/search/history' => 'saved_searches#history'
    get '/search' => 'saved_searches#search' 
-
    get '/u/:id' => 'profiles#find_by_user'
 
 

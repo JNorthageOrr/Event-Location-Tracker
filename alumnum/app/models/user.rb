@@ -33,8 +33,4 @@ class User < ActiveRecord::Base
     Profile.find_by(:user_id => self.id)
   end
 
-  # after_create :user_mailer
-  # def user_mailer
-	 #  UserMailer.welcome_email(self).deliver
-  # end
 end

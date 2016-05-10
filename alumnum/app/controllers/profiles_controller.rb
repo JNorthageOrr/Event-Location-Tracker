@@ -13,7 +13,6 @@ class ProfilesController < ApplicationController
   def index
     @profiles = Profile.all
     @users = User.all
-    @resumes = ResumeItem.all
   end
 
   # GET /profiles/1
@@ -23,12 +22,6 @@ class ProfilesController < ApplicationController
     @profile.save
     @alum = @profile.alum
     this_user_id = @profile.user_id
-
-
-    @resume = ResumeItem.where user_id: this_user_id
-    @qnas = Qna.where user_id: this_user_id
-  
-    @usertags = Usertag.where user_id: this_user_id
 
     @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true, filter_html: true)
     @image = @profile.image_file_name
@@ -47,10 +40,7 @@ class ProfilesController < ApplicationController
 
   # GET /profiles/1/edit
   def edit
-    @qnas = Qna.where(:user_id => current_user)
-    @resume = ResumeItem.where user_id: current_user
-    @usertags = Usertag.where user_id: current_user
-
+   
   end
 
   # POST /profiles
@@ -58,7 +48,6 @@ class ProfilesController < ApplicationController
   def create
     @profile = Profile.new(profile_params)
     @profile.alum = current_user
-    #byebug
     respond_to do |format|
       if @profile.save
         format.html { redirect_to @profile, notice: 'Profile was successfully created.' }
@@ -111,9 +100,7 @@ class ProfilesController < ApplicationController
       regexp = /\?\d+$/
       image_url_fixed = image_url_broken.sub!(regexp, '')
       image_url_final = precede_url + image_url_fixed
-      #binding.pry
-      #debugger
-      
+    
       lat_my = EXIFR::JPEG.new(image_url_final).gps.latitude
       lon_my = EXIFR::JPEG.new(image_url_final).gps.longitude
       this_profile_properties = {

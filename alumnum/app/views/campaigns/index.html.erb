@@ -5,8 +5,8 @@
 <table>
   <thead>
     <tr>
-      <th colspan="13">Name</th>
-      <th>City</th>
+      <th colspan="1">Name</th>
+      <th colspan="1">City</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,7 +18,7 @@
         <td><%= campaign.city %></td>
         <td><%= link_to 'Show', campaign %></td>
         <td><%= link_to 'Edit', edit_campaign_path(campaign) %></td>
-        <td><% link_to 'Destroy', campaign, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', campaign, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

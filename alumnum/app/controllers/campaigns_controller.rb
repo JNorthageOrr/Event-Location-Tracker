@@ -10,17 +10,19 @@ class CampaignsController < ApplicationController
   # GET /campaigns/1
   # GET /campaigns/1.json
   def show
-    #@image = Images.
+    @images = Image.where(campaign_id: params[:id])
+    @campaign = Campaign.find(params[:id])
   end
 
   # GET /campaigns/new
   def new
     @campaign = Campaign.new
-    @campaign.build_image
+    #@campaign.build_image
   end
 
   # GET /campaigns/1/edit
   def edit
+    @campaign = Campaign.find(params[:id])
   end
 
   # POST /campaigns
@@ -31,10 +33,10 @@ class CampaignsController < ApplicationController
     respond_to do |format|
       if @campaign.save
      
-        if params[:avatars]
+        if params[:avatar]
           #===== The magic is here ;)
-          params[:avatars].each { |image|
-          @campaign.pictures.create(avatar: image)
+          params[:avatar].each { |image|
+          @campaign.images.create(avatar: image)
         }
         end
 
@@ -51,6 +53,10 @@ class CampaignsController < ApplicationController
   def update
     respond_to do |format|
       if @campaign.update(campaign_params)
+        if params[:avatar]
+          params[:avatar].each { |image| 
+            @campaign.images.create(avatar: image)}
+        end
         format.html { redirect_to @campaign, notice: 'Campaign was successfully updated.' }
         format.json { render :show, status: :ok, location: @campaign }
       else
@@ -79,6 +85,6 @@ class CampaignsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def campaign_params
-      params.require(:campaign).permit(:name, :city)
+      params.require(:campaign).permit(:name, :city, :image, :avatar)
     end
 end

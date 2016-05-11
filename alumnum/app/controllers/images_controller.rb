@@ -12,13 +12,13 @@ class ImagesController < ApplicationController
   #GET /images/1.json
   def show
     @image = Image.find(params[:id])
-    @image_properties = get_image_properties
+    #@image_properties = get_image_properties
   end
 
   # GET /images/new
   def new
     @image = Image.new
-    @image = Image.find(params[:id])
+    #@image = Image.find(params[:id])
   end
 
   def create
@@ -45,13 +45,13 @@ class ImagesController < ApplicationController
     params.require(:image).permit(:avatar)
   end
 
-  def get_image_properties
-      image_url_broken = @image.avatar.url(:original)
-      precede_url = "./public"
-      regexp = /\?\d+$/
-      image_url_fixed = image_url_broken.sub!(regexp, '')
-      image_url_final = precede_url + image_url_fixed
-  end
+  #def get_image_properties
+  #    image_url_broken = @image.avatar.url(:original)
+  #    precede_url = "./public"
+  #    regexp = /\?\d+$/
+  #   image_url_fixed = image_url_broken.sub!(regexp, '')
+  #    image_url_final = precede_url + image_url_fixed
+  #end
 
 end
 

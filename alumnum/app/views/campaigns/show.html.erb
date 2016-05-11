@@ -10,10 +10,16 @@
   <%= @campaign.city %>
 </p>
 
+<% @images.each do |image| %>
+  
+  <div class="image-index">
+  	<%= link_to image_tag(image.avatar.url(:medium)), image %>
+  </div>
 <%#= image_tag @image.image.url %>
 <%#= image_tag @image.image.url(:medium) %>
 <%#= image_tag @image.image.url(:thumb) %>
-
-<%= link_to 'Add New Picture', new_image_path %>
-<%= link_to 'Edit', edit_campaign_path(@campaign) %> |
-<%= link_to 'Back', campaigns_path %>
+<% end %>
+<br />
+<%= link_to 'Add New Picture', edit_campaign_path(@campaign) %>
+<%# link_to 'Edit', edit_campaign_path(@campaign) %> |
+<%# link_to 'Back', campaigns_path %>

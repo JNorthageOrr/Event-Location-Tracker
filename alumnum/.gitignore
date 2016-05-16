@@ -12,6 +12,9 @@
 !/log/.keep
 /tmp
 
+*.jpg
+*.jpeg
+*.png
 public/system/*.jpg
 public/system/*.png
 .env

@@ -1,5 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="index-body">
+  <div class="campaign-search-bar">
+    <%= form_tag(campaigns_path, :method => "get") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "   Search Campaigns", :class => "search box"%>
+    <%= submit_tag "Search", :name => nil, :class =>"search button" %>
+    <% end %>
+  </div>
+  <% if @campaign_search.present? %>
+    <% if params[:search] != nil %>
+      <%= render @campaign_search %>
+    <% elsif params[:query].present? && @campaign_search.blank? %>
+      <p>There are no posts containing the term(s) <%= params[:search] %>.</p> 
+    <% end %>
+  <% end %>
+</div>
 
+
+<!--
 <h1>Listing Campaigns</h1>
 
 <table>
@@ -12,18 +28,19 @@
   </thead>
 
   <tbody>
-    <% @campaigns.each do |campaign| %>
+    <%# @campaigns.each do |campaign| %>
       <tr>
-        <td><%= campaign.name %></td>
-        <td><%= campaign.city %></td>
-        <td><%= link_to 'Show', campaign %></td>
-        <td><%= link_to 'Edit', edit_campaign_path(campaign) %></td>
-        <td><%= link_to 'Destroy', campaign, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%#= campaign.name %></td>
+        <td><%#= campaign.city %></td>
+        <td><%#= link_to 'Show', campaign %></td>
+        <td><%#= link_to 'Edit', edit_campaign_path(campaign) %></td>
+        <td><%#= link_to 'Destroy', campaign, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
+    <%# end %>
   </tbody>
 </table>
 
 <br>
+-->
 
 <p class="newCampaign"><%= link_to 'New Campaign', new_campaign_path %></p>

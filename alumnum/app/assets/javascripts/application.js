@@ -15,6 +15,5 @@
 //= turbolinks
 //= requre bootstrap-sprockets
 //= bootstrap
-//= require Chart
 //= require_tree .
 

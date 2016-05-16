@@ -94,20 +94,7 @@ class ProfilesController < ApplicationController
       params.require(:profile).permit(:headline, :image_url, :bio, :view_count, :status, :twitter, :github, :personal_site, :linkedin, :image, :attachment)
     end
 
-    def image_properties
-      image_url_broken = @profile.image.url(:original)
-      precede_url = "./public"
-      regexp = /\?\d+$/
-      image_url_fixed = image_url_broken.sub!(regexp, '')
-      image_url_final = precede_url + image_url_fixed
     
-      lat_my = EXIFR::JPEG.new(image_url_final).gps.latitude
-      lon_my = EXIFR::JPEG.new(image_url_final).gps.longitude
-      this_profile_properties = {
-        "lat": lat_my,
-        "lon": lon_my
-      }
-    end
 
     def home
     end
@@ -125,10 +112,5 @@ class ProfilesController < ApplicationController
     end
 
 
-#    \?\d+$    -- this finds anything preceeding a ?
-#    var regexp = /\?\d+$/gi    
-#    var url = "/system/profiles/images/000/000/011/original/20160301_095840.jpg?1456866438"
-#    var cut_url = url.match(regexp);
-#   var new_url = url.replace(/\?\d+$/i, '')
 
 end

@@ -15,11 +15,16 @@
   <div class="image-index">
   	<%= link_to image_tag(image.avatar.url(:medium)), image %>
   </div>
-<%#= image_tag @image.image.url %>
-<%#= image_tag @image.image.url(:medium) %>
-<%#= image_tag @image.image.url(:thumb) %>
-<% end %>
-<br />
-<%= link_to 'Add New Picture', edit_campaign_path(@campaign) %>
-<%# link_to 'Edit', edit_campaign_path(@campaign) %> |
-<%# link_to 'Back', campaigns_path %>
+<% end %><br />
+<%= link_to 'Add New Picture', edit_campaign_path(@campaign) %><br />
+
+<!-- DELETE THIS!! 
+<a href="#" data-background-color="#990000">Paint it red</a>
+<a href="#" data-background-color="#009900" data-text-color="#FFFFFF">Paint it green</a>
+<a href="#" data-background-color="#000099" data-text-color="#FFFFFF">Paint it blue</a>
+-->
+<!--
+<div class="map-container">
+	<div id="marker-map" data-latitude="" data-longitude=""></div>
+</div>
+-->

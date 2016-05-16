@@ -1,0 +1,27 @@
+Images:
+
+-name
+-phone
+-lat
+-latDD
+-long
+-longDD
+-createDate
+
+DMS to DD: 
+var = hour+(((minute*60)+(second))/3600);
+
+var DMS = function convert_DMS() {
+    var lat = 40+(((44*60)+(24))/3600);
+    var long = 73+(((59*60)+(22))/3600);    
+    console.log('Lat: ' + lat)
+    console.log('Long: ' + long)
+        
+}
+DMS();
+
+Alum: id= 27
+Profile id= 11
+image name= "20160301_095840.jpg"
+
+EXIFR::JPEG.new('/system/profiles/images/000/000/011/original/20160301_095840.jpg').gps.longitude

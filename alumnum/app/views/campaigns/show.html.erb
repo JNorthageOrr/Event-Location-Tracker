@@ -1,22 +1,28 @@
-<p id="notice"><%= notice %></p>
+<%= image_tag("Seattle.jpg", class: "seattle") %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @campaign.name %>
-</p>
+<div class="brief">
+	<br />
+	<section class="brief attr">
+  		<strong>Name:</strong>
+  		<%= @campaign.name %>
+  	</section><br /><br />
+  	<section class="brief attr">  	
+  		<strong>City:</strong>
+  		<%= @campaign.city %>
+	</section><br />
+	<aside class="brief description">
+		Mauris pretium felis non diam scelerisque commodo. Donec turpis justo, vulputate a facilisis non, rutrum sed nibh. Proin sagittis ac erat nec dignissim. Suspendisse iaculis lorem arcu, vel rutrum risus hendrerit vitae. Duis lacinia malesuada velit. Nam pretium cursus dolor. Morbi vel tincidunt mi, eu aliquet eros.<br /><br />
 
-<p>
-  <strong>City:</strong>
-  <%= @campaign.city %>
-</p>
-
+		Mauris pretium felis non diam scelerisque commodo. Donec turpis justo, vulputate a facilisis non, rutrum sed nibh. Proin sagittis ac erat nec dignissim. Suspendisse iaculis lorem arcu, vel rutrum risus hendrerit vitae. Duis lacinia malesuada velit. Nam pretium cursus dolor. 
+	</aside>
+</div>
 <% @images.each do |image| %>
   
   <div class="image-index">
   	<%= link_to image_tag(image.avatar.url(:medium)), image %>
   </div>
 <% end %><br />
-<%= link_to 'Add New Picture', edit_campaign_path(@campaign) %><br />
+<%= link_to 'Upload New Picture', edit_campaign_path(@campaign), class: "button" %><br />
 
 <!-- DELETE THIS!! 
 <a href="#" data-background-color="#990000">Paint it red</a>

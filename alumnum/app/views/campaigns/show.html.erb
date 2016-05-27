@@ -16,13 +16,14 @@
 		Mauris pretium felis non diam scelerisque commodo. Donec turpis justo, vulputate a facilisis non, rutrum sed nibh. Proin sagittis ac erat nec dignissim. Suspendisse iaculis lorem arcu, vel rutrum risus hendrerit vitae. Duis lacinia malesuada velit. Nam pretium cursus dolor. 
 	</aside>
 </div>
-<% @images.each do |image| %>
-  
-  <div class="image-index">
-  	<%= link_to image_tag(image.avatar.url(:medium)), image %>
-  </div>
-<% end %><br />
-<%= link_to 'Upload New Picture', edit_campaign_path(@campaign), class: "button" %><br />
+<div class="image-index">
+	<% @images.each do |image| %>
+		<div class="image-show">
+  			<%= link_to image_tag(image.avatar.url(:medium), class: "campaign-image"), image %>
+  		</div>
+ 	<% end %>
+</div>
+<div class="campaign-search-bar-show"><%= link_to 'Upload Pictures', edit_campaign_path(@campaign), class: "btn btn-primary" %></div><br />
 
 <!-- DELETE THIS!! 
 <a href="#" data-background-color="#990000">Paint it red</a>

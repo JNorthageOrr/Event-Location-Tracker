@@ -13,6 +13,10 @@ class ImagesController < ApplicationController
   def show
     @image = Image.find(params[:id])
     #@image_properties = get_image_properties
+    @campaigns = Campaign.all
+    @recent_campaigns_display = @campaigns.uniq.take(6)
+    @campaign_search = Campaign.search(params[:search])
+    
   end
 
   # GET /images/new

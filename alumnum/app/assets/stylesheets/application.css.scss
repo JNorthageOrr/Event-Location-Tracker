@@ -12,7 +12,7 @@
  
  *= javascript_include_tag "http://maps.googleapis.com/maps/api/js?sensor=false"
  *= require_self
- *= require dropzone/dropzone
+ 
  *= require_tree .
  
  */
@@ -20,7 +20,9 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-
+a, p .campaign-dropdown{
+	font-size: 12px;
+}
 
 .search{
 	color: grey;
@@ -29,7 +31,8 @@
 h3.history{
 	color: grey;
 }
-/*nav {
-	margin: 0 0 -10px 0;
+/* To Do: Doesnt fix problem */
+nav.navbar navbar-inverse{
+	margin-bottom: 0;
 }
-*/
+

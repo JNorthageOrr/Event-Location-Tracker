@@ -5,16 +5,20 @@ class CampaignsController < ApplicationController
   # GET /campaigns.json
   def index
     @campaigns = Campaign.all
+    @recent_campaigns_display = @campaigns.uniq.take(6)
     @campaign_search = Campaign.search(params[:search])
-    #binding.pry
+    
     
   end
 
   # GET /campaigns/1
   # GET /campaigns/1.json
   def show
+    @campaigns = Campaign.all
+    @recent_campaigns_display = @campaigns.uniq.take(6)
     @images = Image.where(campaign_id: params[:id])
     @campaign = Campaign.find(params[:id])
+    @campaign_search = Campaign.search(params[:search])
   end
 
   # GET /campaigns/new

@@ -2,12 +2,12 @@
   <div class="campaign-search-bar">
     <%= form_tag(campaigns_path, :method => "get") do %>
     <%= text_field_tag :search, params[:search], placeholder: "   Search Campaigns", :class => "search box"%>
-    <%= submit_tag "Search", :name => nil, :class =>"search button" %>
+    <%= submit_tag "Search", :name => nil, :class =>"btn btn-primary" %>
     <% end %>
   </div>
   <% if @campaign_search.present? %>
     <% if params[:search] != nil %>
-      <%= render @campaign_search %>
+      <%= render @campaign_search %></a>
     <% elsif params[:query].present? && @campaign_search.blank? %>
       <p>There are no posts containing the term(s) <%= params[:search] %>.</p> 
     <% end %>

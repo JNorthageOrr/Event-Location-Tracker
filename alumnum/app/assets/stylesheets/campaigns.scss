@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 div.index-body {
 	position: relative;
 	width: 100%;
@@ -10,13 +11,12 @@ div.index-body {
 	background-size: cover;
 	margin: -23px 0 0 0;
 }
+//margin setting above overrides margin-bottom that bootstrap applies
+
 img.seattle{
 	height: 577px;
 	width: 100%;
 	margin: -23px 0 0 0;
-}
-img {
-	margin: 0 20px 40px 20px;
 }
 div.brief{
 	height: 150px;
@@ -34,28 +34,44 @@ aside.description{
 	margin-top: -90px;
 	padding-right: 70px;
 }
+.image-index{
+	width: 100%;
+}
+div.image-show{
+	display: inline-block;
+	margin: 0 20px;
+}
 div.campaign-search-bar {
 	position: relative;
 	width: 25%;
 	margin: auto;
 	top: 300px;
 }
+div.campaign-search-bar-show{
+	position: relative;
+	width: 25%;
+	margin: 30px auto;
+}
+.campaign-search-results{
+	padding-left: 20px;
+	font-size: 36px;
+	display: inline-block;
+}
+.campaign-search-city{
+	font-size: 20px;
+	color: #666;
+	background: none; 
+	display: inline-block;
+}
 .search{
 	display: inline-block;
-	height: 40px;
-	width: 80px;
-	border-radius: 10px 10px;
+	height: 34px;
+	width: 180px;
+	border-radius: 5px 5px;
 }
 .box{
 	width: 200px;
 }
-.button{
-	background: #028;
-	border: 10px;
-	border-radius: 1px;
-	margin: 10px;
-}
-
 p .newCampaign {
 	padding: 15px;
 

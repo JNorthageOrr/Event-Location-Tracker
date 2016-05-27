@@ -1,7 +1,12 @@
 <% @campaign_search.each do |campaign| %>
-    <%= campaign.name %>
-    <%= campaign.city %>
-    <%= link_to 'View', campaign, method: :get %>
-    <%#= link_to 'Edit', edit_campaign_path(campaign) %>
-    <%#= link_to 'Destroy', campaign, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <div class="campaign-search-results">
+    	<%# campaign.name %>
+    	<%# campaign.city %>
+    	<%= link_to campaign.name, campaign, method: :get %>
+    	<p class="campaign-search-city"> -  
+    		<%= campaign.city %>
+    	</p>
+    	<%#= link_to 'Edit', edit_campaign_path(campaign) %>
+    	<%#= link_to 'Destroy', campaign, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>		
 <% end %>

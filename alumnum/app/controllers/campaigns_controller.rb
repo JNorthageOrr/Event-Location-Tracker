@@ -23,7 +23,9 @@ class CampaignsController < ApplicationController
 
   # GET /campaigns/new
   def new
+    @campaigns = Campaign.all
     @campaign = Campaign.new
+    @recent_campaigns_display = @campaigns.take(6)
     #@campaign.build_image
   end
 

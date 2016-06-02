@@ -1,9 +1,10 @@
 class Image < ActiveRecord::Base
 	belongs_to :campaign
 
-	has_attached_file :avatar, styles: {large: "600x600", medium: "300x300", thumb: "150x150"}
+	has_attached_file :avatar, styles: {large: "600x600", medium: "300x300#", thumb: "150x150"}
   #to Refresh thumbnails, if styles change: rake paperclip:refresh:thumbnails CLASS=User
   #perform file validation
+  #to resize image (scale and crop), add the # at the end of the style (see medium)
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
   #save Latitude and Longitude after file is uploaded, validated
   after_post_process :save_latlong

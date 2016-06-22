@@ -1,4 +1,10 @@
 
-<%= @recent_campaigns_display.each do |campaign| %>
-	<li><a href="/campaigns/<%=campaign.id%>" class="campaign-dropdown"><%=campaign.name%></a></li>	
-<%end%>
+<% @recent_campaigns_display.each do |campaign_list| %>
+	<li class="campaign-dropdown"><%= link_to campaign_list do |a| %>
+		<%= campaign_list.name %></li>
+	<% end %>
+<% end %>
+
+
+
+

@@ -1,4 +1,5 @@
 class CampaignsController < ApplicationController
+  #before_filter :authenticate_user!, :except => [:show, :index]
   before_action :set_campaign, only: [:show, :edit, :update, :destroy]
 
   # GET /campaigns
@@ -32,6 +33,9 @@ class CampaignsController < ApplicationController
   # GET /campaigns/1/edit
   def edit
     @campaign = Campaign.find(params[:id])
+    @campaigns = Campaign.all
+    @campaign = Campaign.new
+    @recent_campaigns_display = @campaigns.take(6)
   end
 
   # POST /campaigns

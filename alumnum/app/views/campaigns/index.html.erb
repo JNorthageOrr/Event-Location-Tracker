@@ -7,7 +7,13 @@
   </div>
   <% if @campaign_search.present? %>
     <% if params[:search] != nil %>
-      <%= render @campaign_search %></a>
+      <ul>
+        <% @campaign_search.each do |result| %>
+          <li><%= link_to 'View', result %>
+          <span><%= result.name %>, <%=result.city %>, <%=result.created_at.strftime("%m/%d/%Y") %></span></li>
+          
+        <% end %>
+      </ul>
     <% elsif params[:query].present? && @campaign_search.blank? %>
       <p>There are no posts containing the term(s) <%= params[:search] %>.</p> 
     <% end %>

@@ -4,28 +4,8 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%#= f.radio_button :type, "Alum" %>
-    <%#= f.label :type, "Alum", value: "Alum" %>
-    <%#= f.radio_button :type, "Employer" %>
-    <%#= f.label :type, "Employer", value: "Employer" %>
-    <%= f.radio_button :type, "Admin" %>
-    <%= f.label :type, "Admin", value: "Admin" %>    
-  </div>
-
-    <div class="field">
-    <%= f.label :first_name %><br />
-    <%= f.text_field :first_name, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :last_name %><br />
-    <%= f.text_field :last_name %>
-  </div>
-
-  
-  <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email %>
+    <%= f.email_field :email, autofocus: true %>
   </div>
 
   <div class="field">
@@ -46,4 +26,4 @@
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<%= render "users/shared/links" %>

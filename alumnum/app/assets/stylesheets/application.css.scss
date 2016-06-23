@@ -25,6 +25,11 @@
 	background-size: cover;
 }
 
+.navbar-collapse{
+	padding-left: 0;
+	padding-right: 0;
+}
+
 a, p .campaign-dropdown{
 	font-size: 18px;
 }
@@ -36,8 +41,5 @@ a, p .campaign-dropdown{
 h3.history{
 	color: grey;
 }
-/* To Do: Doesnt fix problem */
-nav.navbar navbar-inverse{
-	margin-bottom: 0;
-}
+
 

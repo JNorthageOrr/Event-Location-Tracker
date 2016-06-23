@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   resources :campaigns
   resources :images
   resources :profiles
-  devise_for :users, controllers: { omniauth_callbacks: "callbacks" }
+  devise_for :users, controllers: { sessions: 'users/sessions'  }
+  # omniauth_callbacks: "callbacks"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

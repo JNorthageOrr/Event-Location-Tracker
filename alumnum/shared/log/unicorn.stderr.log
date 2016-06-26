@@ -1,0 +1,285 @@
+I, [2016-06-24T18:30:53.861744 #8492]  INFO -- : Refreshing Gem list
+I, [2016-06-24T18:30:57.060663 #8492]  INFO -- : listening on addr=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.sock fd=9
+I, [2016-06-24T18:30:57.061055 #8492]  INFO -- : worker=0 spawning...
+I, [2016-06-24T18:30:57.068133 #8496]  INFO -- : worker=0 spawned pid=8496
+I, [2016-06-24T18:30:57.068648 #8496]  INFO -- : worker=0 ready
+I, [2016-06-24T18:30:57.065760 #8492]  INFO -- : worker=1 spawning...
+I, [2016-06-24T18:30:57.075579 #8492]  INFO -- : master process ready
+I, [2016-06-24T18:30:57.080604 #8499]  INFO -- : worker=1 spawned pid=8499
+I, [2016-06-24T18:30:57.081033 #8499]  INFO -- : worker=1 ready
+I, [2016-06-24T19:01:24.130667 #9299]  INFO -- : executing ["/home/jnorr/.rbenv/versions/2.2.3/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {9=>#<Kgio::UNIXServer:/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.sock>}] (in /home/jnorr/code/NMS_pho/alumnum)
+I, [2016-06-24T19:01:24.131669 #9299]  INFO -- : forked child re-executing...
+I, [2016-06-24T19:01:25.013091 #9299]  INFO -- : inherited addr=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.sock fd=9
+I, [2016-06-24T19:01:25.013808 #9299]  INFO -- : Refreshing Gem list
+I, [2016-06-24T19:01:29.424451 #9299]  INFO -- : worker=0 spawning...
+I, [2016-06-24T19:01:29.428476 #9299]  INFO -- : worker=1 spawning...
+I, [2016-06-24T19:01:29.435474 #9304]  INFO -- : worker=0 spawned pid=9304
+I, [2016-06-24T19:01:29.436002 #9304]  INFO -- : worker=0 ready
+I, [2016-06-24T19:01:29.438661 #9299]  INFO -- : master process ready
+I, [2016-06-24T19:01:29.440345 #9307]  INFO -- : worker=1 spawned pid=9307
+I, [2016-06-24T19:01:29.440747 #9307]  INFO -- : worker=1 ready
+E, [2016-06-25T15:34:52.739477 #9299] ERROR -- : old PID:8492 running with existing pid=/home/jnorr/code/NMS_pho/alumnum/shared/pids/unicorn.pid.oldbin, refusing rexec
+I, [2016-06-25T15:47:58.801412 #9299]  INFO -- : reaped #<Process::Status: pid 9304 exit 0> worker=0
+I, [2016-06-25T15:47:58.801966 #9299]  INFO -- : reaped #<Process::Status: pid 9307 exit 0> worker=1
+I, [2016-06-25T15:47:58.802502 #9299]  INFO -- : master complete
+E, [2016-06-25T15:47:58.975052 #8492] ERROR -- : reaped #<Process::Status: pid 9299 exit 0> exec()-ed
+I, [2016-06-25T15:53:45.297212 #32711]  INFO -- : executing ["/home/jnorr/.rbenv/versions/2.2.3/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {9=>#<Kgio::UNIXServer:/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.sock>}] (in /home/jnorr/code/NMS_pho/alumnum)
+I, [2016-06-25T15:53:45.298287 #32711]  INFO -- : forked child re-executing...
+I, [2016-06-25T15:53:46.166101 #32711]  INFO -- : inherited addr=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.sock fd=9
+I, [2016-06-25T15:53:46.166808 #32711]  INFO -- : Refreshing Gem list
+I, [2016-06-25T15:53:50.121233 #32711]  INFO -- : worker=0 spawning...
+I, [2016-06-25T15:53:50.127356 #32711]  INFO -- : worker=1 spawning...
+I, [2016-06-25T15:53:50.132187 #32718]  INFO -- : worker=0 spawned pid=32718
+I, [2016-06-25T15:53:50.132641 #32718]  INFO -- : worker=0 ready
+I, [2016-06-25T15:53:50.134889 #32711]  INFO -- : master process ready
+I, [2016-06-25T15:53:50.137665 #32721]  INFO -- : worker=1 spawned pid=32721
+I, [2016-06-25T15:53:50.138211 #32721]  INFO -- : worker=1 ready
+I, [2016-06-25T18:44:09.017355 #32711]  INFO -- : reaped #<Process::Status: pid 32718 exit 0> worker=0
+I, [2016-06-25T18:44:09.018243 #32711]  INFO -- : reaped #<Process::Status: pid 32721 exit 0> worker=1
+I, [2016-06-25T18:44:09.018658 #32711]  INFO -- : master complete
+E, [2016-06-25T18:44:09.091012 #8492] ERROR -- : reaped #<Process::Status: pid 32711 exit 0> exec()-ed
+I, [2016-06-25T18:46:33.985247 #4275]  INFO -- : executing ["/home/jnorr/.rbenv/versions/2.2.3/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {9=>#<Kgio::UNIXServer:/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.sock>}] (in /home/jnorr/code/NMS_pho/alumnum)
+I, [2016-06-25T18:46:33.986644 #4275]  INFO -- : forked child re-executing...
+I, [2016-06-25T18:46:34.607947 #4275]  INFO -- : inherited addr=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.sock fd=9
+I, [2016-06-25T18:46:34.608334 #4275]  INFO -- : Refreshing Gem list
+I, [2016-06-25T18:46:38.981606 #4275]  INFO -- : worker=0 spawning...
+I, [2016-06-25T18:46:38.988167 #4281]  INFO -- : worker=0 spawned pid=4281
+I, [2016-06-25T18:46:38.988660 #4281]  INFO -- : worker=0 ready
+I, [2016-06-25T18:46:38.989517 #4275]  INFO -- : worker=1 spawning...
+I, [2016-06-25T18:46:38.993553 #4275]  INFO -- : master process ready
+I, [2016-06-25T18:46:38.996400 #4284]  INFO -- : worker=1 spawned pid=4284
+I, [2016-06-25T18:46:38.996866 #4284]  INFO -- : worker=1 ready
+I, [2016-06-25T18:51:14.461614 #4275]  INFO -- : reaped #<Process::Status: pid 4281 exit 0> worker=0
+I, [2016-06-25T18:51:14.462242 #4275]  INFO -- : reaped #<Process::Status: pid 4284 exit 0> worker=1
+I, [2016-06-25T18:51:14.462596 #4275]  INFO -- : master complete
+E, [2016-06-25T18:51:14.634239 #8492] ERROR -- : reaped #<Process::Status: pid 4275 exit 0> exec()-ed
+I, [2016-06-25T18:51:15.097203 #8492]  INFO -- : reaped #<Process::Status: pid 8496 exit 0> worker=0
+I, [2016-06-25T18:51:15.097790 #8492]  INFO -- : reaped #<Process::Status: pid 8499 exit 0> worker=1
+I, [2016-06-25T18:51:15.098277 #8492]  INFO -- : master complete
+I, [2016-06-25T18:51:35.745357 #1417]  INFO -- : Refreshing Gem list
+I, [2016-06-25T18:51:41.834210 #1417]  INFO -- : unlinking existing socket=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.sock
+I, [2016-06-25T18:51:41.834799 #1417]  INFO -- : listening on addr=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.sock fd=9
+I, [2016-06-25T18:51:41.835124 #1417]  INFO -- : worker=0 spawning...
+I, [2016-06-25T18:51:41.838708 #1417]  INFO -- : worker=1 spawning...
+I, [2016-06-25T18:51:41.844311 #1417]  INFO -- : master process ready
+I, [2016-06-25T18:51:41.850944 #1455]  INFO -- : worker=1 spawned pid=1455
+I, [2016-06-25T18:51:41.851387 #1455]  INFO -- : worker=1 ready
+I, [2016-06-25T18:51:41.857177 #1452]  INFO -- : worker=0 spawned pid=1452
+I, [2016-06-25T18:51:41.857598 #1452]  INFO -- : worker=0 ready
+I, [2016-06-25T18:52:36.875755 #1876]  INFO -- : executing ["/home/jnorr/.rbenv/versions/2.2.3/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {9=>#<Kgio::UNIXServer:/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.sock>}] (in /home/jnorr/code/NMS_pho/alumnum)
+I, [2016-06-25T18:52:36.876564 #1876]  INFO -- : forked child re-executing...
+I, [2016-06-25T18:52:37.768196 #1876]  INFO -- : inherited addr=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.sock fd=9
+I, [2016-06-25T18:52:37.770579 #1876]  INFO -- : Refreshing Gem list
+I, [2016-06-25T18:52:40.660472 #1876]  INFO -- : worker=0 spawning...
+I, [2016-06-25T18:52:40.662402 #1876]  INFO -- : worker=1 spawning...
+I, [2016-06-25T18:52:40.663604 #1880]  INFO -- : worker=0 spawned pid=1880
+I, [2016-06-25T18:52:40.663806 #1880]  INFO -- : worker=0 ready
+I, [2016-06-25T18:52:40.665991 #1876]  INFO -- : master process ready
+I, [2016-06-25T18:52:40.667247 #1883]  INFO -- : worker=1 spawned pid=1883
+I, [2016-06-25T18:52:40.668002 #1883]  INFO -- : worker=1 ready
+E, [2016-06-25T19:26:52.078491 #1876] ERROR -- : old PID:1417 running with existing pid=/home/jnorr/code/NMS_pho/alumnum/shared/pids/unicorn.pid.oldbin, refusing rexec
+I, [2016-06-25T19:28:11.678936 #1876]  INFO -- : reaped #<Process::Status: pid 1880 exit 0> worker=0
+I, [2016-06-25T19:28:11.679119 #1876]  INFO -- : reaped #<Process::Status: pid 1883 exit 0> worker=1
+I, [2016-06-25T19:28:11.679243 #1876]  INFO -- : master complete
+E, [2016-06-25T19:28:11.734255 #1417] ERROR -- : reaped #<Process::Status: pid 1876 exit 0> exec()-ed
+I, [2016-06-25T19:28:12.594690 #1417]  INFO -- : reaped #<Process::Status: pid 1452 exit 0> worker=0
+I, [2016-06-25T19:28:12.696161 #1417]  INFO -- : reaped #<Process::Status: pid 1455 exit 0> worker=1
+I, [2016-06-25T19:28:12.697630 #1417]  INFO -- : master complete
+I, [2016-06-25T19:28:31.248616 #1417]  INFO -- : Refreshing Gem list
+F, [2016-06-25T19:28:36.091703 #1417] FATAL -- : error adding listener addr=/var/sockets/unicorn.alumnum.sock
+/home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/socket_helper.rb:122:in `initialize': Permission denied - connect(2) for /var/sockets/unicorn.alumnum.sock (Errno::EACCES)
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/socket_helper.rb:122:in `new'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/socket_helper.rb:122:in `bind_listen'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:231:in `listen'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `each'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:130:in `start'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /home/jnorr/.rbenv/versions/2.2.3/bin/unicorn:23:in `load'
+	from /home/jnorr/.rbenv/versions/2.2.3/bin/unicorn:23:in `<main>'
+I, [2016-06-25T19:36:57.945400 #2285]  INFO -- : Refreshing Gem list
+F, [2016-06-25T19:37:00.263026 #2285] FATAL -- : error adding listener addr={shared_dir}/sockets/unicorn.alumnum.sock
+/home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/socket_helper.rb:131:in `bind_listen': Don't know how to bind: {shared_dir}/sockets/unicorn.alumnum.sock (ArgumentError)
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:231:in `listen'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `each'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:130:in `start'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /home/jnorr/.rbenv/versions/2.2.3/bin/unicorn:23:in `load'
+	from /home/jnorr/.rbenv/versions/2.2.3/bin/unicorn:23:in `<main>'
+I, [2016-06-25T19:46:02.461521 #2744]  INFO -- : Refreshing Gem list
+F, [2016-06-25T19:46:05.194616 #2744] FATAL -- : error adding listener addr={shared_dir}/sockets/unicorn.sock
+/home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/socket_helper.rb:131:in `bind_listen': Don't know how to bind: {shared_dir}/sockets/unicorn.sock (ArgumentError)
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:231:in `listen'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `each'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:130:in `start'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /home/jnorr/.rbenv/versions/2.2.3/bin/unicorn:23:in `load'
+	from /home/jnorr/.rbenv/versions/2.2.3/bin/unicorn:23:in `<main>'
+I, [2016-06-25T19:46:38.523517 #1422]  INFO -- : Refreshing Gem list
+F, [2016-06-25T19:46:43.950524 #1422] FATAL -- : error adding listener addr={shared_dir}/sockets/unicorn.sock
+/home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/socket_helper.rb:131:in `bind_listen': Don't know how to bind: {shared_dir}/sockets/unicorn.sock (ArgumentError)
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:231:in `listen'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `each'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:130:in `start'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /home/jnorr/.rbenv/versions/2.2.3/bin/unicorn:23:in `load'
+	from /home/jnorr/.rbenv/versions/2.2.3/bin/unicorn:23:in `<main>'
+I, [2016-06-25T19:53:29.219810 #2063]  INFO -- : Refreshing Gem list
+F, [2016-06-25T19:53:32.290172 #2063] FATAL -- : error adding listener addr={shared_dir}/sockets/unicorn.sock
+/home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/socket_helper.rb:131:in `bind_listen': Don't know how to bind: {shared_dir}/sockets/unicorn.sock (ArgumentError)
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:231:in `listen'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `each'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:130:in `start'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /home/jnorr/.rbenv/versions/2.2.3/bin/unicorn:23:in `load'
+	from /home/jnorr/.rbenv/versions/2.2.3/bin/unicorn:23:in `<main>'
+I, [2016-06-25T19:54:54.967503 #2216]  INFO -- : Refreshing Gem list
+F, [2016-06-25T19:54:58.404803 #2216] FATAL -- : error adding listener addr={shared_dir}/sockets/unicorn.sock
+/home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/socket_helper.rb:131:in `bind_listen': Don't know how to bind: {shared_dir}/sockets/unicorn.sock (ArgumentError)
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:231:in `listen'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `each'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:130:in `start'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /home/jnorr/.rbenv/versions/2.2.3/bin/unicorn:23:in `load'
+	from /home/jnorr/.rbenv/versions/2.2.3/bin/unicorn:23:in `<main>'
+I, [2016-06-25T19:56:23.036220 #2385]  INFO -- : Refreshing Gem list
+F, [2016-06-25T19:56:25.814334 #2385] FATAL -- : error adding listener addr={shared_dir}/sockets/unicorn.sock
+/home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/socket_helper.rb:131:in `bind_listen': Don't know how to bind: {shared_dir}/sockets/unicorn.sock (ArgumentError)
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:231:in `listen'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `each'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:130:in `start'
+	from /home/jnorr/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /home/jnorr/.rbenv/versions/2.2.3/bin/unicorn:23:in `load'
+	from /home/jnorr/.rbenv/versions/2.2.3/bin/unicorn:23:in `<main>'
+I, [2016-06-25T20:07:16.814711 #2762]  INFO -- : Refreshing Gem list
+I, [2016-06-25T20:07:21.608113 #2762]  INFO -- : listening on addr=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.sock fd=9
+I, [2016-06-25T20:07:21.608427 #2762]  INFO -- : worker=0 spawning...
+I, [2016-06-25T20:07:21.611311 #2762]  INFO -- : worker=1 spawning...
+I, [2016-06-25T20:07:21.615341 #2762]  INFO -- : master process ready
+I, [2016-06-25T20:07:21.621265 #2766]  INFO -- : worker=0 spawned pid=2766
+I, [2016-06-25T20:07:21.621674 #2766]  INFO -- : worker=0 ready
+I, [2016-06-25T20:07:21.623801 #2769]  INFO -- : worker=1 spawned pid=2769
+I, [2016-06-25T20:07:21.624129 #2769]  INFO -- : worker=1 ready
+I, [2016-06-25T20:11:43.562215 #3031]  INFO -- : executing ["/home/jnorr/.rbenv/versions/2.2.3/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {9=>#<Kgio::UNIXServer:/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.sock>}] (in /home/jnorr/code/NMS_pho/alumnum)
+I, [2016-06-25T20:11:43.563345 #3031]  INFO -- : forked child re-executing...
+I, [2016-06-25T20:11:44.406691 #3031]  INFO -- : inherited addr=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.sock fd=9
+I, [2016-06-25T20:11:44.407336 #3031]  INFO -- : Refreshing Gem list
+I, [2016-06-25T20:11:48.927720 #3031]  INFO -- : listening on addr=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.alumnum.sock fd=10
+I, [2016-06-25T20:11:48.928058 #3031]  INFO -- : worker=0 spawning...
+I, [2016-06-25T20:11:48.945535 #3031]  INFO -- : worker=1 spawning...
+I, [2016-06-25T20:11:48.961374 #3037]  INFO -- : worker=0 spawned pid=3037
+I, [2016-06-25T20:11:48.962086 #3037]  INFO -- : worker=0 ready
+I, [2016-06-25T20:11:48.957630 #3031]  INFO -- : master process ready
+I, [2016-06-25T20:11:48.981421 #3040]  INFO -- : worker=1 spawned pid=3040
+I, [2016-06-25T20:11:48.982104 #3040]  INFO -- : worker=1 ready
+E, [2016-06-25T20:16:00.752618 #3031] ERROR -- : old PID:2762 running with existing pid=/home/jnorr/code/NMS_pho/alumnum/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2016-06-25T20:21:30.742788 #3031] ERROR -- : old PID:2762 running with existing pid=/home/jnorr/code/NMS_pho/alumnum/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2016-06-25T20:32:12.702737 #3031] ERROR -- : old PID:2762 running with existing pid=/home/jnorr/code/NMS_pho/alumnum/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2016-06-25T20:54:04.800148 #3031] ERROR -- : old PID:2762 running with existing pid=/home/jnorr/code/NMS_pho/alumnum/shared/pids/unicorn.pid.oldbin, refusing rexec
+I, [2016-06-25T20:58:46.903671 #3031]  INFO -- : reaped #<Process::Status: pid 3037 exit 0> worker=0
+I, [2016-06-25T20:58:46.904117 #3031]  INFO -- : reaped #<Process::Status: pid 3040 exit 0> worker=1
+I, [2016-06-25T20:58:46.904339 #3031]  INFO -- : master complete
+E, [2016-06-25T20:58:47.021810 #2762] ERROR -- : reaped #<Process::Status: pid 3031 exit 0> exec()-ed
+I, [2016-06-25T21:01:10.391976 #4685]  INFO -- : Refreshing Gem list
+I, [2016-06-25T21:01:13.423532 #4685]  INFO -- : listening on addr=/tmp/unicorn.alumnum.sock fd=9
+I, [2016-06-25T21:01:13.423721 #4685]  INFO -- : worker=0 spawning...
+I, [2016-06-25T21:01:13.425289 #4685]  INFO -- : worker=1 spawning...
+I, [2016-06-25T21:01:13.426460 #4689]  INFO -- : worker=0 spawned pid=4689
+I, [2016-06-25T21:01:13.426683 #4689]  INFO -- : worker=0 ready
+I, [2016-06-25T21:01:13.428428 #4685]  INFO -- : master process ready
+I, [2016-06-25T21:01:13.434176 #4692]  INFO -- : worker=1 spawned pid=4692
+I, [2016-06-25T21:01:13.434389 #4692]  INFO -- : worker=1 ready
+I, [2016-06-25T21:08:33.186521 #4685]  INFO -- : reaped #<Process::Status: pid 4689 exit 0> worker=0
+I, [2016-06-25T21:08:33.186817 #4685]  INFO -- : reaped #<Process::Status: pid 4692 exit 0> worker=1
+I, [2016-06-25T21:08:33.187001 #4685]  INFO -- : master complete
+I, [2016-06-25T21:08:33.934905 #2762]  INFO -- : reaped #<Process::Status: pid 2766 exit 0> worker=0
+I, [2016-06-25T21:08:33.935622 #2762]  INFO -- : reaped #<Process::Status: pid 2769 exit 0> worker=1
+I, [2016-06-25T21:08:33.936171 #2762]  INFO -- : master complete
+I, [2016-06-25T21:08:54.374209 #1424]  INFO -- : Refreshing Gem list
+I, [2016-06-25T21:08:59.788611 #1424]  INFO -- : listening on addr=/tmp/unicorn.alumnum.sock fd=9
+I, [2016-06-25T21:08:59.789181 #1424]  INFO -- : worker=0 spawning...
+I, [2016-06-25T21:08:59.795832 #1424]  INFO -- : worker=1 spawning...
+I, [2016-06-25T21:08:59.807309 #1462]  INFO -- : worker=1 spawned pid=1462
+I, [2016-06-25T21:08:59.807856 #1462]  INFO -- : worker=1 ready
+I, [2016-06-25T21:08:59.808142 #1459]  INFO -- : worker=0 spawned pid=1459
+I, [2016-06-25T21:08:59.808518 #1459]  INFO -- : worker=0 ready
+I, [2016-06-25T21:08:59.803463 #1424]  INFO -- : master process ready
+I, [2016-06-25T21:15:02.594576 #1424]  INFO -- : reaped #<Process::Status: pid 1459 exit 0> worker=0
+I, [2016-06-25T21:15:02.594991 #1424]  INFO -- : reaped #<Process::Status: pid 1462 exit 0> worker=1
+I, [2016-06-25T21:15:02.595244 #1424]  INFO -- : master complete
+I, [2016-06-25T21:15:51.247423 #2111]  INFO -- : Refreshing Gem list
+I, [2016-06-25T21:15:54.369002 #2111]  INFO -- : unlinking existing socket=/tmp/unicorn.alumnum.sock
+I, [2016-06-25T21:15:54.369241 #2111]  INFO -- : listening on addr=/tmp/unicorn.alumnum.sock fd=9
+I, [2016-06-25T21:15:54.369421 #2111]  INFO -- : worker=0 spawning...
+I, [2016-06-25T21:15:54.371488 #2111]  INFO -- : worker=1 spawning...
+I, [2016-06-25T21:15:54.372740 #2114]  INFO -- : worker=0 spawned pid=2114
+I, [2016-06-25T21:15:54.372960 #2114]  INFO -- : worker=0 ready
+I, [2016-06-25T21:15:54.374783 #2111]  INFO -- : master process ready
+I, [2016-06-25T21:15:54.381327 #2117]  INFO -- : worker=1 spawned pid=2117
+I, [2016-06-25T21:15:54.382116 #2117]  INFO -- : worker=1 ready
+I, [2016-06-25T22:10:52.624186 #3649]  INFO -- : executing ["/home/jnorr/.rbenv/versions/2.2.3/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {9=>#<Kgio::UNIXServer:/tmp/unicorn.alumnum.sock>}] (in /home/jnorr/code/NMS_pho/alumnum)
+I, [2016-06-25T22:10:52.625132 #3649]  INFO -- : forked child re-executing...
+I, [2016-06-25T22:10:53.497292 #3649]  INFO -- : inherited addr=/tmp/unicorn.alumnum.sock fd=9
+I, [2016-06-25T22:10:53.498043 #3649]  INFO -- : Refreshing Gem list
+I, [2016-06-25T22:10:58.305577 #3649]  INFO -- : listening on addr=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.alumnum.sock fd=10
+I, [2016-06-25T22:10:58.305998 #3649]  INFO -- : worker=0 spawning...
+I, [2016-06-25T22:10:58.309388 #3649]  INFO -- : worker=1 spawning...
+I, [2016-06-25T22:10:58.314112 #3654]  INFO -- : worker=0 spawned pid=3654
+I, [2016-06-25T22:10:58.314610 #3654]  INFO -- : worker=0 ready
+I, [2016-06-25T22:10:58.316345 #3649]  INFO -- : master process ready
+I, [2016-06-25T22:10:58.318888 #3657]  INFO -- : worker=1 spawned pid=3657
+I, [2016-06-25T22:10:58.319317 #3657]  INFO -- : worker=1 ready
+I, [2016-06-25T22:11:54.798952 #3649]  INFO -- : reaped #<Process::Status: pid 3654 exit 0> worker=0
+I, [2016-06-25T22:11:54.799878 #3649]  INFO -- : reaped #<Process::Status: pid 3657 exit 0> worker=1
+I, [2016-06-25T22:11:54.800368 #3649]  INFO -- : master complete
+E, [2016-06-25T22:11:54.921558 #2111] ERROR -- : reaped #<Process::Status: pid 3649 exit 0> exec()-ed
+I, [2016-06-25T22:11:55.369209 #2111]  INFO -- : reaped #<Process::Status: pid 2114 exit 0> worker=0
+I, [2016-06-25T22:11:55.471779 #2111]  INFO -- : reaped #<Process::Status: pid 2117 exit 0> worker=1
+I, [2016-06-25T22:11:55.472711 #2111]  INFO -- : master complete
+I, [2016-06-25T22:12:14.670963 #1420]  INFO -- : Refreshing Gem list
+I, [2016-06-25T22:12:20.410205 #1420]  INFO -- : unlinking existing socket=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.alumnum.sock
+I, [2016-06-25T22:12:20.410747 #1420]  INFO -- : listening on addr=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.alumnum.sock fd=9
+I, [2016-06-25T22:12:20.411201 #1420]  INFO -- : worker=0 spawning...
+I, [2016-06-25T22:12:20.416149 #1420]  INFO -- : worker=1 spawning...
+I, [2016-06-25T22:12:20.421570 #1420]  INFO -- : master process ready
+I, [2016-06-25T22:12:20.426872 #1455]  INFO -- : worker=0 spawned pid=1455
+I, [2016-06-25T22:12:20.427417 #1455]  INFO -- : worker=0 ready
+I, [2016-06-25T22:12:20.434737 #1458]  INFO -- : worker=1 spawned pid=1458
+I, [2016-06-25T22:12:20.435197 #1458]  INFO -- : worker=1 ready
+I, [2016-06-25T22:25:06.245811 #1420]  INFO -- : reaped #<Process::Status: pid 1455 exit 0> worker=0
+I, [2016-06-25T22:25:06.246191 #1420]  INFO -- : reaped #<Process::Status: pid 1458 exit 0> worker=1
+I, [2016-06-25T22:25:06.246355 #1420]  INFO -- : master complete
+I, [2016-06-26T00:22:40.225532 #5772]  INFO -- : Refreshing Gem list
+I, [2016-06-26T00:22:42.936634 #5772]  INFO -- : unlinking existing socket=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.alumnum.sock
+I, [2016-06-26T00:22:42.936892 #5772]  INFO -- : listening on addr=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.alumnum.sock fd=9
+I, [2016-06-26T00:22:42.937041 #5772]  INFO -- : worker=0 spawning...
+I, [2016-06-26T00:22:42.939358 #5772]  INFO -- : worker=1 spawning...
+I, [2016-06-26T00:22:42.941022 #5772]  INFO -- : master process ready
+I, [2016-06-26T00:22:42.947226 #5775]  INFO -- : worker=0 spawned pid=5775
+I, [2016-06-26T00:22:42.947495 #5775]  INFO -- : worker=0 ready
+I, [2016-06-26T00:22:42.948933 #5777]  INFO -- : worker=1 spawned pid=5777
+I, [2016-06-26T00:22:42.949129 #5777]  INFO -- : worker=1 ready
+I, [2016-06-26T11:18:18.220332 #18263]  INFO -- : executing ["/home/jnorr/.rbenv/versions/2.2.3/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {9=>#<Kgio::UNIXServer:/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.alumnum.sock>}] (in /home/jnorr/code/NMS_pho/alumnum)
+I, [2016-06-26T11:18:18.220835 #18263]  INFO -- : forked child re-executing...
+I, [2016-06-26T11:18:19.070779 #18263]  INFO -- : inherited addr=/home/jnorr/code/NMS_pho/alumnum/shared/sockets/unicorn.alumnum.sock fd=9
+I, [2016-06-26T11:18:19.071633 #18263]  INFO -- : Refreshing Gem list
+I, [2016-06-26T11:18:23.238509 #18263]  INFO -- : worker=0 spawning...
+I, [2016-06-26T11:18:23.244768 #18268]  INFO -- : worker=0 spawned pid=18268
+I, [2016-06-26T11:18:23.245713 #18268]  INFO -- : worker=0 ready
+I, [2016-06-26T11:18:23.246196 #18263]  INFO -- : worker=1 spawning...
+I, [2016-06-26T11:18:23.249523 #18263]  INFO -- : master process ready
+I, [2016-06-26T11:18:23.252563 #18271]  INFO -- : worker=1 spawned pid=18271
+I, [2016-06-26T11:18:23.253064 #18271]  INFO -- : worker=1 ready

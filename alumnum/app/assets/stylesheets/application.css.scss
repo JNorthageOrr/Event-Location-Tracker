@@ -29,7 +29,10 @@
 	padding-left: 0;
 	padding-right: 0;
 }
-
+.dropdown-menu{
+	left: -15px;
+	min-width: 198px;
+}
 a, p .campaign-dropdown{
 	font-size: 18px;
 }
